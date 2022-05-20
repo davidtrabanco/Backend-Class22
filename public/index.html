@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+
+    <title>Clase 12</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script src="./js/ejs.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+
+        <h4>Productos</h4>
+        <!-- <h5>Ingrese Nuevo Producto</h5>
+
+        <div>
+            <form action="" id="newProductFrom">
+                Producto<input type="text" id="title" required>
+                Precio<input type="text" id="price" required>
+                Imágen<input type="text" id="thumbnail" required>
+                <button type="submit" class="bttnCreateProd button-primary" form="newProductFrom">Cargar</button>
+            </form>
+        </div> -->
+
+    </div>
+
+    <div class="row">
+        <h5>Lista de Productos</h5>
+        <div class='productsLit eight columns'>
+            <!-- Aquí inserto tabla productos -->
+        </div>
+    </div>
+
+    <div class="row">
+        <h4 id="msgTitle"> </h4>
+
+            <form onsubmit="" id="sendMessageForm">
+                <div>
+                    e-mail <input type="email" id="msj.email" required placeholder="usuario@dominio.com" form="sendMessageForm">
+                    Nombre <input type="text" id="msj.name" required placeholder="Pepe" form="sendMessageForm">
+                    Apellido <input type="text" id="msj.lastname" required placeholder="Gomez" form="sendMessageForm">
+                    Edad <input type="number" id="msj.age" required placeholder="34" form="sendMessageForm">
+                    Alias <input type="text" id="msj.nickname" required placeholder="Pepito" form="sendMessageForm">
+                    Avatar <input type="text" id="msj.avatar" placeholder="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-256.png" form="sendMessageForm">
+
+                </div>
+
+                <div class='chat'>
+                    <ul class="messagesList">
+                        <!-- Aquí inserto chats -->
+                    </ul>
+                </div>
+
+                <div>
+            
+                <input type="text" id="msj.message" class="five columns" required form="sendMessageForm" placeholder="Mensaje">
+                <button type="submit" form="sendMessageForm" class="bttnSendMsg button-primary">Enviar</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"> </script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/products.js"></script>
+    <script type="module" src="./js/chat.js"></script>
+</body>
+</html>

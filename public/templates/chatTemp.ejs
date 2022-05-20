@@ -1,0 +1,3 @@
+<% messages.forEach( message => { %>
+    <li> <img src=<%= message.author.avatar %> width="50" height="50" alt=""> <span><%= message.author.email %></span> <span><i>[<%= message.author.name %>]</i></span>: <span><b><%= message.text %></b></li></span>
+<% }); %>
